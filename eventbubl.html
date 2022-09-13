@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Event Bubbling
+</title>
+</head>
+<body>
+<h2>Event Bubbling</h2>
+<div id="parent">
+<button>
+<h2>Parent</h2>
+</button>
+<button id="child">
+<p>child</p>
+</button>
+</div><br>
+<script>
+document.getElementById("child")
+.addEventListener("click",function(){
+alert("child is invoked");},false);
+document.getElementById("parent")
+.addEventListener("click",function(){
+alert("parent is invoked");},false);
+</script>
+</body>
+</html>
+
