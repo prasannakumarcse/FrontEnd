@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Funtions in JavaScript
+</title>
+</head>
+<body>
+<h2>JavaScript Arrays</h2>
+<p>Initial array is:<span id="ia"></span></p>
+<p>Multiplying element with 5 using map:<span id="mm"></span></p>
+<p>elements greater than 30 using fiter are:<span id="oo"></span></p>
+<p>the sum of elements in array using reduce is:<span id="ll"></span></p>
+<script>
+var a=[11,23,34,44,15,83,3];
+document.getElementById("ia").innerHTML=a;
+var mm=a.map(mfunction);
+function mfunction(num){
+return num*5;
+}
+document.getElementById("mm").innerHTML=mm;
+var oo=a.filter(ofunction);
+function ofunction(num){
+return num>=30;
+}
+document.getElementById("oo").innerHTML=oo;
+var ll=a.reduce(lfunction,0);
+function lfunction(t,num){
+return t+Math.round(num);
+ }
+document.getElementById("ll").innerHTML=ll;
+</script>
+</body>
+</html>
